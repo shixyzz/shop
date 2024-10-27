@@ -1,1 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин техніки</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+  
+    <header>
 
+        <input type="text" placeholder="Введіть запит для пошуку">
+      <button onclick="performSearch()">Знайти</button>
+        <nav>
+            <a href="#">Товари</a>
+            <a href="#">Новини</a>
+            <a href="#">Категорії</a>
+        </nav>
+        <button class="cart">
+          <img src="https://cdn.discordapp.com/attachments/757633081690554578/1297106258301681735/db41a94f2709334a.png?ex=67160957&is=6714b7d7&hm=1567f1b13df05b4ee5169dd0b81895d69ae0f69e6d82e6c3335c21d9c9481287&" alt="Cart Icon">
+          Кошик
+      </button>
+   
+    </header>
+
+    <div class="hero">
+      
+    </div>
+  <button class="compare-button" onclick="window.location.href='https://porivnynya.vercel.app'">перейти до порівняння</button>
+
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1296867440109551724/Poco.jpg?ex=6713d96c&is=671287ec&hm=3363c9b2a1942bf593c463106d4b25899fff31d63d70f46a38e8e5f70c108b7b&" alt="Poco X6 Pro">
+          
+            <h3>Poco X6 Pro 256 ГБ / 8 ГБ</h3>
+            <p>Екран: 6.67", 2712x1220, 446 ppi, 120 Гц</p>
+            <p>Матриця: AMOLED</p>
+            <p>Пам'ять: 256 ГБ, ОЗУ 8 ГБ</p>
+            <p>Процесор: Dimensity 8300 Ultra</p>
+          <p>Кількість ядер: 8</p>
+            <p>Камера: 3 модуля, 64 МП + 8 МП, макро</p>
+            <p>Акумулятор: 5000 мАч</p>
+          <p>Вес, г: 186</p>
+            <div class="price">Від 11 449 до 16 390 грн</div>
+          
+        </div>
+
+        
+        <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1296875955851235379/apple_iphone_13_pro_max_graphite_1.jpg?ex=6713e15a&is=67128fda&hm=5bda5fcc8e31a4f52dd67acbe56f2936c2e83eeeb708fcf440276c105f547483&" alt="Apple iPhone 13 Pro Max 128GB">
+            <h3>Apple iPhone 13 Pro Max 128GB</h3>
+            <p>Екран: 6.7", 2778x1284, 458 ppi, 120 Гц</p>
+            <p>Матриця: OLED (LTPO)</p>
+            <p>Пам'ять: 128 ГБ, ОЗУ 6 ГБ</p>
+            <p>Процесор: A15 Bionic</p>
+          <p>Ядер процесора: 6</p>
+            <p>Камера: 3 модуля, 12 МП</p>
+          <p>Відео: 4K, стабилизация, slow-mo.</p>
+          <p>Аккумулятор: 4352 мАч</p>
+          <p>Вес, г: 240</p>
+            <div class="price">Від 27 999 до 50 482 грн</div>
+        </div>
+
+       
+        <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1296875995185283153/images.jpg?ex=6713e164&is=67128fe4&hm=d67874af48117ebd075a188296bd70c979e7b473bb172ba2bb2ad7aec2688a8c&" alt="Клавіатура Motospeed CK 104">
+            <h3>Клавіатура Motospeed CK 104</h3>
+          <p>Матеріал: метал</p>
+            <p>Розкладка: Eng / Ru / Ukr</p>
+          <p>Тип перемикачів: Blue</p>
+          <p>Термін служби кнопок: 45 мільйонів натискань</p>
+          <p>Час відгуку: 1000 Гц/с</p>
+          <p>Тип підключення: USB</p>
+          <p>Кількість кнопок клавіатури: 104</p>
+          <p>Тип клавіатури: Механічна</p>
+          <p>Гарантія: 12 місяців</p>
+          <p>Вага, кг: 0,825</p>
+            <div class="price">Від 3000 до 4000 грн</div>
+        </div>
+
+        
+        <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1296877409379029094/5a1c3cc5e1c3ae58.webp?ex=6713e2b5&is=67129135&hm=ce21b7d1893a2264ad0aaf6ca15c0c613d3f7291d88a2290ccc4377891cc81dd&" alt="Навушники Asus ROG">
+            <h3>Навушники Asus ROG Delta USB Type-C</h3>
+            <p>Тип навушників: Повнорозмірні</p>
+          <p>Тип підключення: Дротові</p>
+          <p>Інтерфейс під'єднання: USB Type-C</p>
+          <p>Тип мікрофону: Змінний</p>
+          <p>Підтримка об'ємного звуку: 7.1</p>
+          <p>Довжина шнура, м: 1.5</p>
+          <p>Діапазон частот навушників, Гц: 20 Гц – 40 000 Гц</p>
+          <p>Діапазон частот мікрофона, Гц: 100 - 10000 Гц</p>
+          <p>Чутливість мікрофона: -40 дБ</p>
+          <p>Гарантія: 24 місяці</p>
+          <p>Вага, г: 300</p>
+            <div class="price">9 699 грн</div>
+        </div>
+
+        
+        <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1296876057135419484/4195816555_noutbuk-acer-nitro-800x800.jpg?ex=6713e172&is=67128ff2&hm=5135556ca9ac201a2aa34f09a3c6e7c8e2ec9cbe35e44eb17d2f3581440cc9eb&" alt="Acer Nitro 5">
+            <h3>Acer Nitro 5 AN515-45</h3>
+          <p>Країна виробник: Китай</p>
+            <p>Екран: 15.6", 1920x1080, 144 Гц</p>
+            <p>Процесор: Intel Core i5 10300H</p>
+            <p>ОЗУ: 8 ГБ</p>
+          <p>Обсяг: SSD 512 GB</p>
+          <p>Тип пам'яті: DDR4</p>
+          <p>Обсяг пам'яті відеокарти: 4 ГБ</p>
+            <p>Відеокарта: Nvidia RTX3060</p>
+          <p>Тип відеокарти: Дискретна</p>
+          <p>Вага, кг: 2.4</p>
+            <div class="price">37 000 грн</div>
+        </div>
+
+        
+        <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1296876085530853486/micro.jpg?ex=6713e179&is=67128ff9&hm=aa85a5666eeca87e4cf3d82969fbafaad2713e0b75423407449bd44bc736b365&" alt="Мікрофон HyperX QuadCast">
+            <h3>Мікрофон HyperX QuadCast</h3>
+            <p>Спосіб підключення: Дротовий</p>
+          <p>Тип перетворювача: Конденсаторний</p>
+          <p>Частотний діапазон, Гц: 20-20000</p>
+          <p>Чутливість, дБ (мВ/Па): - 36 дБ</p>
+          <p>Вихідний штекер: USB, mini jack 3,5 мм</p>
+          <p>Розміри, мм: 128 х 102 х 249 мм</p>
+          <p>Матеріал корпуса: Метал / Пластик</p>
+          <p>Додаткові характеристики Живлення: 5 В, 125 мА</p>
+          <p>Гарантія: 12 місяців</p>
+          <p>Вага, г: 254</p>
+            <div class="price">Від 3 640 до 6 299 грн</div>
+        </div>
+      <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1297603611081048174/6278192907_bezdrotova-mehanichna-igrova.webp?ex=67168709&is=67153589&hm=9849867c38a055ff7e2f530015955e2c413be0a7e2602e96f0a07f87ab6eb8c8&" alt="Proove Gaming Slicke">
+            <h3>Proove Gaming Slicke з RGB-підсвічуванням</h3>
+            <p>Матеріал: ABS-пластик</p>
+            <p>Розкладка: Eng / Ru / Ukr</p>
+            <p>Тип перемикачів: Outemu Red (Hot-Swap)</p>
+            <p>Термін служби кнопок:	50 мільйонів натискань</p>
+            <p>Час відгуку:	1000 Гц/с</p>
+          <p>Тип підключення:	2.4 ГГц / Bluetooth 5.2 / USB Type-C</p>
+          <p>Тип клавіатури: Механічна</p>
+          <p>Час роботи:	~25 годин з підсвічуванням, ~200 годин без підсвічування</p>
+        <p>Кількість кнопок клавіатури: 98</p>
+        <p>Вага, г:	850</p>
+            <div class="price">4 199 грн</div>
+        </div>
+      
+      <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1297615434182295582/72db413152edfdf2.webp?ex=6716920c&is=6715408c&hm=7ab9d6a087a5e15c0c6437c1c36bcad24f2c1ba145c54ec03286d335450863a2&" alt="Ноутбук ASUS TUF Gaming A15">
+            <h3>Ноутбук ASUS TUF Gaming A15</h3>
+            <p>Діагональ екрану: 15,6"</p>
+            <p>Частота оновлення екрану: 144 Гц</p>
+            <p>Роздільна здатність: 1920x1080</p>
+            <p>Процесор: Шестиядерний AMD Ryzen 5 7535HS (3.3 - 4.55 Ггц</p>
+            <p>Обсяг оперативної пам'яті: 16 ГБ</p>
+          <p>Тип оперативної пам'яті: DDR5</p>
+          <p>Дискретна відеокарта: Geforce GTX 3050</p>
+          <p>Обсяг пам'яті відеокарти: 4 ГБ</p>
+        <p>Ємність акумулятора, Вт год: 48</p>
+        <p>Вага, кг: 2.3</p>
+            <div class="price">36 999 грн</div>
+      </div>
+      <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1298205267598774312/2.webp?ex=6718b75f&is=671765df&hm=415efc3e43a9aec0b0d89cf1b6dba411c905a197d94934401562dbc2ecee44b7&" alt="Навушники Fifine H6 7.1 Black RGB">
+            <h3>Навушники Razer Blackshark V2 PRO Wireless 2023 White</h3>
+            <p>Тип навушників: Повнорозмірні</p>
+            <p>Тип підключення: Бездротові</p>
+            <p>Інтерфейс під'єднання: Bluetooth 5.2</p>
+            <p>Тип мікрофону: Динамічний</p>
+            <p>Підтримка об'ємного звуку: 7.1</p>
+          <p>Довжина шнура, м: 2</p>
+          <p>Діапазон частот навушників, Гц: 12 Гц – 28 000 Гц</p>
+          <p>Чутливість мікрофона: 100 дБ</p>
+        <p>Вага, г: 320</p>
+            <div class="price">9 999 грн</div>
+        </div>
+      <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1297620155710312600/micro_2.jpg?ex=67169671&is=671544f1&hm=e921226247d0c34ac2ede0675efaaf42737939437fac1bf817fbbd266dfadfe4&" alt="Мікрофон Fifine A9">
+            <h3>Мікрофон Fifine A9</h3>
+            <p>Cпосіб підключення: Дротовий</p>
+        <p>Тип перетворювача:	конденсаторний</p>
+          <p>Живлення: 5 В</p>
+          <p>Частотний діапазон: 61 - 18000 Гц</p>
+          <p>Чутливість: -40 дБ</p>
+          <p>Довжина кабеля, м: 2.5</p>
+          <p>Матеріал корпуса: Метал</p>
+          <p>Гарантійний термін: 12 місяців</p>
+        <p>Вага, г:	676 </p>
+        <p>Спротив: 1000 Ом</p>
+        <p>Роз'єми: USB Typce-C</p>
+        <p>Країна реєстрації бренду: Китай</p>
+        <p>Гарантія: 12 місяців</p>
+        <p>Додатково:	Студійний конденсаторний мікрофон із кнопкою вибору діаграми спрямованості. Вимкнення звуку, регулювання гучності навушників, кнопка вибору діаграми спрямованості, чотири режими зміни світлового ефекту RGB.</p>
+            <div class="price">4399 грн</div>
+      </div>
+      <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1297798169081548852/d095b980985d85ad.webp?ex=67173c3b&is=6715eabb&hm=cd8192b1b208175f3e8d448779f3a416a6dbfbc7c15c1c278216be476104591a&" alt="Комп'ютерне крісло Huzaro Force 4.7 RGB Black тканина">
+            <h3>Комп'ютерне крісло Huzaro Force 4.7 RGB Black тканина</h3>
+            <p>Код товару: Force 4.7 RGB Black</p>
+          <p>Матеріал каркаса: метал</p>
+        <p>Граничний кут нахилу спинки: 140</p>
+          <p>Ширина, см: 65</p>
+          <p>Висота, см: 80 </p>
+          <p>Глибина, см: 55</p>
+        <p>Розміри сидіння, см: 33 x 50</p>
+        <p>Висота сидіння, см: 43 - 53</p>
+        <p>Висота сидіння у верхньому положенні, см: 50</p>
+        <p>Висота сидіння в нижньому положенні, см: 40</p>
+          <p>Висота з урахуванням спинки, см: 123</p>
+          <p>Максимально допустиме навантаження, кг: 140</p>
+        <p>Вага, кг: 19</p>
+            <div class="price">6299 грн</div>
+      </div>
+      <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/757633081690554578/1297976942623985714/3.webp?ex=6717e2ba&is=6716913a&hm=82df97ebc217a5b92cd752620d2c0dda7d34bb484e203ee17c05de1fb4b2bdae&" alt="Крісло для геймерів Hator Sport Light Black/Red (HTC-911)">
+            <h3>Крісло для геймерів Hator Sport Light Black/Red (HTC-911)</h3>
+            <p>Максимальне навантаження, кг: 100</p>
+          <p>Матеріал основи: метал</p>
+          <p>Граничний кут нахилу спинки: 170</p>
+        <p>Ширина, см: 53</p>
+        <p>Висота, см: 55</p>
+        <p>Глибина, см: 49</p>
+          <p>Розміри сидіння, см: 38 х 51 </p>
+          <p>Висота підлокітників, см: 59-67 </p>
+          <p>Країна реєстрації бренду: Україна</p>
+          <p>Гарантія: 12 місяців</p>
+        <p>Вага, кг: 19.5</p>
+            <div class="price">6999 грн</div>
+      </div>
+    </div>
+  
+  <h1>Порівняння Техніки</h1>
+  
+  <div class="comparison-container">
+    
+    <table class="comparison-table" id="comparison-smartphones">
+        <thead>
+            <tr>
+                <th>Характеристика</th>
+                <th>Poco X6 Pro (256GB / 8GB)</th>
+                <th>Apple iPhone 13 Pro Max (128GB)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight">
+                <td>Процесор</td>
+                <td>Snapdragon 870</td>
+                <td>Apple A15 Bionic</td>
+            </tr>
+            <tr>
+                <td>Оперативна пам'ять</td>
+                <td>8 ГБ</td>
+                <td>6 ГБ</td>
+            </tr>
+            <tr class="highlight">
+                <td>Вбудована пам'ять</td>
+                <td>256 ГБ</td>
+                <td>128 ГБ</td>
+            </tr>
+            <tr>
+                <td>Розмір екрану</td>
+                <td>6.67 дюймів (AMOLED, 120 Гц)</td>
+                <td>6.7 дюймів (Super Retina XDR, 120 Гц)</td>
+            </tr>
+            <tr class="highlight">
+                <td>Основна камера</td>
+                <td>108 МП + 8 МП + 5 МП</td>
+                <td>12 МП + 12 МП + 12 МП (LiDAR)</td>
+            </tr>
+            <tr>
+                <td>Фронтальна камера</td>
+                <td>20 МП</td>
+                <td>12 МП</td>
+            </tr>
+            <tr class="highlight">
+                <td>Ємність батареї</td>
+                <td>5000 мАг</td>
+                <td>4352 мАг</td>
+            </tr>
+            <tr>
+                <td>Операційна система</td>
+                <td>MIUI 13 (на базі Android 12)</td>
+                <td>iOS 15 (оновлюється до iOS 17)</td>
+            </tr>
+            <tr class="highlight">
+                <td>Швидка зарядка</td>
+                <td>33W</td>
+                <td>20W</td>
+            </tr>
+            <tr>
+                <td>Ціна (орієнтовна)</td>
+                <td>~ 11 449 - 16 390 грн</td>
+                <td>~ 27 999 - 50 482 грн</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    
+    <table class="comparison-table" id="comparison-keyboards">
+        <thead>
+            <tr>
+                <th>Характеристика</th>
+                <th>Клавіатура Motospeed CK 104</th>
+                <th>Proove Gaming Slicke з RGB-підсвічуванням</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight">
+                <td>Матеріал</td>
+                <td>Метал</td>
+                <td>ABS-пластик</td>
+            </tr>
+            <tr>
+                <td>Розкладка</td>
+                <td>Eng / Ru / Ukr</td>
+                <td>Eng / Ru / Ukr</td>
+            </tr>
+            <tr class="highlight">
+                <td>Тип перемикачів</td>
+                <td>Blue</td>
+                <td>Outemu Red (Hot-Swap)</td>
+            </tr>
+            <tr>
+                <td>Термін служби кнопок</td>
+                <td>45 мільйонів натискань</td>
+                <td>50 мільйонів натискань</td>
+            </tr>
+            <tr class="highlight">
+                <td>Час відгуку</td>
+                <td>1000 Гц/с</td>
+                <td>1000 Гц/с</td>
+            </tr>
+            <tr>
+                <td>Тип підключення</td>
+                <td>USB</td>
+                <td>2.4 ГГц / Bluetooth 5.2 / USB Type-C</td>
+            </tr>
+            <tr class="highlight">
+                <td>Кількість кнопок клавіатури</td>
+                <td>104</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>Тип клавіатури</td>
+                <td>Механічна</td>
+                <td>Механічна</td>
+            </tr>
+            <tr class="highlight">
+                <td>Вага, г</td>
+                <td>850</td>
+                <td>825</td>
+            </tr>
+            <tr>
+                <td>Ціна (орієнтовна)</td>
+                <td>~ 3000-4000 грн</td>
+                <td>~ 4199 грн</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+  
+  <div class="comparison-container">
+  
+  <table id="comparison-table" id="comprasion-headphones"> 
+        <thead>
+            <tr>
+                <th>Характеристика</th>
+                <th>Навушники Asus ROG Delta USB Type-C</th>
+                <th>Навушники Razer BlackShark V2 Pro 2023</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight">
+                <td>Тип навушників</td>
+                <td>Повнорозмірні</td>
+                <td>Повнорозмірні</td>
+            </tr>
+            <tr>
+                <td>Тип підключення</td>
+                <td>Дротові</td>
+                <td>Бездротові</td>
+            </tr>
+            <tr class="highlight">
+                <td>Інтерфейс під'єднання</td>
+                <td>USB Type-C</td>
+                <td>Bluetooth 5.2</td>
+            </tr>
+            <tr>
+                <td>Тип мікрофону</td>
+                <td>Змінний</td>
+                <td>Динамічний</td>
+            </tr>
+            <tr class="highlight">
+                <td>Підтримка об'ємного звуку</td>
+                <td>7.1</td>
+                <td>7.1</td>
+            </tr>
+            <tr>
+                <td>Чутливість мікрофона</td>
+                <td>40дБ</td>
+                <td>100 дБ</td>
+            </tr>
+            <tr class="highlight">
+                <td>Діапазон частот навушників</td>
+                <td>20 Гц – 40 000 Гц</td>
+                <td>12 Гц – 28 000 Гц</td>
+            </tr>
+            <tr>
+                <td>Довжина шнура, м</td>
+                <td>1,5</td>
+                <td>2</td>
+            </tr>
+            <tr class="highlight">
+                <td>Вага, г</td>
+                <td>300</td>
+                <td>320</td>
+            </tr>
+            <tr>
+                <td>Ціна (орієнтовна)</td>
+                <td>~ 9 699 грн</td>
+                <td>~ 9 999 грн</td>
+            </tr>
+        </tbody>
+    </table>
+  
+  
+  <table id="comparison-table" id="compasion-laptops">
+        <thead>
+            <tr>
+                <th>Характеристика</th>
+                <th>Acer Nitro 5 AN515-45</th>
+                <th>Ноутбук ASUS TUF Gaming A15</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight">
+                <td>Діагональ екрану</td>
+                <td>15.6"</td>
+                <td>15.6"</td>
+            </tr>
+            <tr>
+                <td>Екран</td>
+                <td>144 Гц</td>
+                <td>144 Гц</td>
+            </tr>
+            <tr class="highlight">
+                <td>Роздільна здатність</td>
+                <td>1920x1080</td>
+                <td>1920x1080</td>
+            </tr>
+            <tr>
+                <td>Процесор</td>
+                <td>Intel Core i5 10300H</td>
+                <td>AMD Ryzen 5 7535HS (3.3 - 4.55 Ггц)</td>
+            </tr>
+            <tr class="highlight">
+                <td>ОЗУ</td>
+                <td>8 ГБ</td>
+                <td>16 ГБ</td>
+            </tr>
+            <tr>
+                <td>Обсяг</td>
+                <td>SSD 512 GB</td>
+                <td>SSD 1 ТБ</td>
+            </tr>
+            <tr class="highlight">
+                <td>Відеокарта</td>
+                <td>Geforce GTX 3060</td>
+                <td>Geforce GTX 3050</td>
+            </tr>
+            <tr>
+                <td>Обсяг пам'яті відеокарти</td>
+                <td>4 ГБ</td>
+                <td>4 ГБ</td>
+            </tr>
+            <tr class="highlight">
+                <td>Вага, кг</td>
+                <td>2.4</td>
+                <td>2.3</td>
+            </tr>
+            <tr>
+                <td>Ціна (орієнтовна)</td>
+                <td>~ 37 000 грн</td>
+                <td>~ 36 999 грн</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+  
+  <div class="comparison-container">
+  
+  <table id="comparison-table" id="comprasion-headphones"> 
+        <thead>
+            <tr>
+                <th>Характеристика</th>
+                <th>Мікрофон HyperX QuadCast</th>
+                <th>Мікрофон Fifine A9</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight">
+                <td>Cпосіб підключення</td>
+                <td>Дротовий</td>
+                <td>Дротовий</td>
+            </tr>
+            <tr>
+                <td>Живлення</td>
+                <td>5 В</td>
+                <td>5 В</td>
+            </tr>
+            <tr class="highlight">
+                <td>Частотний діапазон, Гц</td>
+                <td>20 - 20000 Гц</td>
+                <td>61 - 18000 Гц</td>
+            </tr>
+            <tr>
+                <td>Чутливість</td>
+                <td>- 36 дБ</td>
+                <td>-40 дБ</td>
+            </tr>
+            <tr class="highlight">
+                <td>Роз'єми</td>
+                <td>USB Typce-C</td>
+                <td>USB</td>
+            </tr>
+            <tr>
+                <td>Довжина кабеля, м</td>
+                <td>3,5</td>
+                <td>2,5</td>
+            </tr>
+            <tr class="highlight">
+                <td>Матеріал корпуса</td>
+                <td>Метал / Пластик</td>
+                <td>Метал</td>
+            </tr>
+            <tr>
+                <td>Гарантія</td>
+                <td>12 місяців</td>
+                <td>12 місяців</td>
+            </tr>
+            <tr class="highlight">
+                <td>Вага, г</td>
+                <td>254</td>
+                <td>676</td>
+            </tr>
+            <tr>
+                <td>Ціна (орієнтовна)</td>
+                <td>~ 3 640 - 6 299 грн</td>
+                <td>~ 4399 грн</td>
+            </tr>
+        </tbody>
+    </table>
+  
+  
+  <table id="comparison-table" id="compasion-laptops">
+        <thead>
+            <tr>
+                <th>Характеристика</th>
+                <th>Комп'ютерне крісло Huzaro Force 4.7 RGB Black тканина</th>
+                <th>Крісло для геймерів Hator Sport Light Black/Red (HTC-911)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight">
+                <td>Матеріал каркаса</td>
+                <td>Метал</td>
+                <td>Метал</td>
+            </tr>
+            <tr>
+                <td>Ширина, см</td>
+                <td>65</td>
+                <td>53</td>
+            </tr>
+            <tr class="highlight">
+                <td>Висота, см</td>
+                <td>80</td>
+                <td>55</td>
+            </tr>
+            <tr>
+                <td>Глибина, см</td>
+                <td>55</td>
+                <td>49</td>
+            </tr>
+            <tr class="highlight">
+                <td>Граничний кут нахилу спинки</td>
+                <td>140</td>
+                <td>170</td>
+            </tr>
+            <tr>
+                <td>Розміри сидіння, см</td>
+                <td>33 x 50</td>
+                <td>38 x 51</td>
+            </tr>
+            <tr class="highlight">
+                <td>Гарантія</td>
+                <td>12 місяців</td>
+                <td>12 місяців</td>
+            </tr>
+            <tr>
+                <td>Максимальне навантаження, кг</td>
+                <td>140</td>
+                <td>100</td>
+            </tr>
+            <tr class="highlight">
+                <td>Вага, кг</td>
+                <td>19</td>
+                <td>19,5</td>
+            </tr>
+            <tr>
+                <td>Ціна (орієнтовна)</td>
+                <td>~ 6 299 грн</td>
+                <td>~ 6 999 грн</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+  
+  <footer>
+        
+        <div class="footer-section">
+            <h4>Швидкі посилання</h4>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Політика конфіденційності</a></li>
+                <li><a href="#">Умови користування</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="footer-section">
+            <h4>Контакти</h4>
+            <ul>
+                <li>Email: danyareva965@gmail.com</li>
+                <li>Телефон: +38 095 52 116 57</li>
+                <li>Адреса: вул. Приклад, 1, Київ, Україна</li>
+            </ul>
+        </div>
+
+       
+        <div class="footer-section">
+            <h4>Ми в соцмережах</h4>
+            <div class="footer-socials">
+                <a href="#"><img src="https://cdn.discordapp.com/attachments/757633081690554578/1297104296164462592/facebook2.png?ex=6714b603&is=67136483&hm=b74b1f3fa78febd8d9a2341cda2b2450efb8aa020834247294b86de2a2c52080&" alt="Facebook"></a>
+                <a href="#"><img src="https://cdn.discordapp.com/attachments/757633081690554578/1297104656840786000/instagram.png?ex=6714b659&is=671364d9&hm=7bd55890f652837a76381132c1a0e922cd586dc75d26fd870a14630a7cb67b49&" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn.discordapp.com/attachments/757633081690554578/1297104932658483270/twitter2.png?ex=6714b69a&is=6713651a&hm=a086b1012ada52e4ad609f6ff3c638386b4fc5599bde0f2196f44ec572fb8775&" alt="Twitter"></a>
+                <a href="#"><img src="https://cdn.discordapp.com/attachments/757633081690554578/1297105158542463010/youtube.png?ex=6714b6d0&is=67136550&hm=dcafd1a0ad3731dc91a79ddc7ac19ceb3ba46cdc1b31414bc8de8623cad008e4&" alt="YouTube"></a>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Всі права захищені. Магазин Техніки.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
